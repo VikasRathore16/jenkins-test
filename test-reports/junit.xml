@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Phalcon - Testsuite" tests="158" assertions="142" errors="54" failures="29" skipped="0" time="6.500033">
+    <testsuite name="App\Core\Test\CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" tests="9" assertions="11" errors="0" failures="1" skipped="0" time="0.313105">
+      <testcase name="testCacheSet" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="12" assertions="1" time="0.031764"/>
+      <testcase name="testCacheGet" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="20" assertions="1" time="0.031363"/>
+      <testcase name="testCacheDelete" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="27" assertions="1" time="0.033664"/>
+      <testcase name="testCacheGetMultiple" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="35" assertions="1" time="0.031245"/>
+      <testcase name="testCacheFlush" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="45" assertions="1" time="0.033956"/>
+      <testcase name="testCacheFlushByType" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="55" assertions="1" time="0.030297"/>
+      <testcase name="testCacheFlushAll" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="64" assertions="1" time="0.032801"/>
+      <testcase name="testCacheDefault" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="72" assertions="2" time="0.056035">
+        <system-out>/app/home/app/code/core/etc/config.php
+/app/home/app/code/core/etc/config.php
+/app/home/app/code/twitter/etc/config.php
+/app/home/app/code/frontend/etc/config.php
+/app/home/app/code/frontend/etc/config.php
+/app/home/app/code/connector/etc/config.php
+/app/home/app/code/bigcommercehome/etc/config.php
+/app/home/app/code/shopifyhome/etc/config.php
+/app/home/app/code/onyx/etc/config.php
+/app/home/app/code/apiconnect/etc/config.php
+/app/home/app/code/testhome/etc/config.php
+/app/home/app/code/amazon/etc/config.php
+/app/home/app/code/meta/etc/config.php
+</system-out>
+      </testcase>
+      <testcase name="testCacheBlocked" class="App\Core\Test\CacheTest" classname="App.Core.Test.CacheTest" file="/app/home/app/code/core/Test/CacheTest.php" line="88" assertions="2" time="0.031980">
+        <warning type="PHPUnit\Framework\Warning">App\Core\Test\CacheTest::testCacheBlocked
+Trying to @cover or @use not existing method "Cache::blockCache".
+
+</warning>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Core\Test\Components\Message\Handler\SqsTest" file="/app/home/app/code/core/Test/Components/Message/Handler/SqsTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.035104">
+      <testcase name="testCheckStatus" class="App\Core\Test\Components\Message\Handler\SqsTest" classname="App.Core.Test.Components.Message.Handler.SqsTest" file="/app/home/app/code/core/Test/Components/Message/Handler/SqsTest.php" line="14" assertions="1" time="0.035104">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Components\Message\Handler\SqsTest::testCheckStatus
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'success' =&gt; false
+-    'message' =&gt; 'App status is uninstall'
++    'message' =&gt; 'Something went wrong!'
+ )
+
+/app/home/app/code/core/Test/Components/Message/Handler/SqsTest.php:32
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Core\Test\Models\User\DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" tests="11" assertions="10" errors="1" failures="8" skipped="0" time="0.409220">
+      <testcase name="testAddShop" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="13" assertions="1" time="0.031321">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testAddShop
+Failed asserting that false is true.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:25
+</failure>
+      </testcase>
+      <testcase name="testUpdateShop" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="31" assertions="1" time="0.039438"/>
+      <testcase name="testAddWarehouse" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="50" assertions="1" time="0.034962">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testAddWarehouse
+Failed asserting that false is true.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:56
+</failure>
+      </testcase>
+      <testcase name="testUpdateWarehouse" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="62" assertions="0" time="0.033757">
+        <error type="ArgumentCountError">App\Core\Test\Models\User\DetailsTest::testUpdateWarehouse
+ArgumentCountError: Too few arguments to function App\Core\Models\User\Details::updateWarehouse(), 1 passed in /app/home/app/code/core/Test/Models/User/DetailsTest.php on line 67 and at least 2 expected
+
+/app/home/app/code/core/Models/User/Details.php:635
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:67
+</error>
+      </testcase>
+      <testcase name="testGetConfig" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="74" assertions="1" time="0.032520"/>
+      <testcase name="testGetShop" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="85" assertions="1" time="0.040598">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testGetShop
+Failed asserting that false is not false.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:90
+</failure>
+      </testcase>
+      <testcase name="testGetWarehouse" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="96" assertions="1" time="0.036046">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testGetWarehouse
+Failed asserting that false is not false.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:102
+</failure>
+      </testcase>
+      <testcase name="testGetConfigByKey" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="108" assertions="1" time="0.033569">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testGetConfigByKey
+Failed asserting that false is not false.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:114
+</failure>
+      </testcase>
+      <testcase name="testSetConfigByKey" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="120" assertions="1" time="0.038789">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testSetConfigByKey
+Failed asserting that false is true.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:126
+</failure>
+      </testcase>
+      <testcase name="testDeleteWarehouse" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="132" assertions="1" time="0.045524">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testDeleteWarehouse
+Failed asserting that false is true.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:138
+</failure>
+      </testcase>
+      <testcase name="testDeleteShop" class="App\Core\Test\Models\User\DetailsTest" classname="App.Core.Test.Models.User.DetailsTest" file="/app/home/app/code/core/Test/Models/User/DetailsTest.php" line="144" assertions="1" time="0.042696">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Core\Test\Models\User\DetailsTest::testDeleteShop
+Failed asserting that false is true.
+
+/app/home/app/code/core/Test/Models/User/DetailsTest.php:149
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Core\Test\Models\UserGeneratedTokensTest" file="/app/home/app/code/core/Test/Models/UserGeneratedTokensTest.php" tests="2" assertions="1" errors="1" failures="0" skipped="0" time="0.076280">
+      <testcase name="testGetUserGeneratedTokens" class="App\Core\Test\Models\UserGeneratedTokensTest" classname="App.Core.Test.Models.UserGeneratedTokensTest" file="/app/home/app/code/core/Test/Models/UserGeneratedTokensTest.php" line="11" assertions="1" time="0.038986"/>
+      <testcase name="testCreateTokenByRefresh" class="App\Core\Test\Models\UserGeneratedTokensTest" classname="App.Core.Test.Models.UserGeneratedTokensTest" file="/app/home/app/code/core/Test/Models/UserGeneratedTokensTest.php" line="24" assertions="0" time="0.037294">
+        <error type="Error">App\Core\Test\Models\UserGeneratedTokensTest::testCreateTokenByRefresh
+Error: Object of class stdClass could not be converted to string
+
+/app/home/app/code/core/Components/TokenManager.php:39
+/app/home/app/code/core/Components/TokenManager.php:44
+/app/home/app/code/core/Components/TokenManager.php:62
+/app/home/app/code/core/Components/Helper.php:66
+/app/home/app/code/core/Models/UserGeneratedTokens.php:119
+/app/home/app/code/core/Models/UserGeneratedTokens.php:157
+/app/home/app/code/core/Test/Models/UserGeneratedTokensTest.php:30
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Core\Test\UnitTest" file="/app/home/app/code/core/Test/UnitTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.030117">
+      <testcase name="testTestCase" class="App\Core\Test\UnitTest" classname="App.Core.Test.UnitTest" file="/app/home/app/code/core/Test/UnitTest.php" line="11" assertions="2" time="0.030117"/>
+    </testsuite>
+    <testsuite name="App\Connector\Test\Api\ShopTest" file="/app/home/app/code/connector/Test/Api/ShopTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.035769">
+      <testcase name="testChangeShopStatus" class="App\Connector\Test\Api\ShopTest" classname="App.Connector.Test.Api.ShopTest" file="/app/home/app/code/connector/Test/Api/ShopTest.php" line="7" assertions="1" time="0.035769">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Api\ShopTest::testChangeShopStatus
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Invalid status type! uninstall status is not allowed for shop'
++    'success' =&gt; true
++    'message' =&gt; ' shop status updated to uninstall'
+ )
+
+/app/home/app/code/connector/Test/Api/ShopTest.php:21
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Connector\Test\Api\UserTest" file="/app/home/app/code/connector/Test/Api/UserTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.037459">
+      <testcase name="testChangeUserStatus" class="App\Connector\Test\Api\UserTest" classname="App.Connector.Test.Api.UserTest" file="/app/home/app/code/connector/Test/Api/UserTest.php" line="7" assertions="1" time="0.037459">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Api\UserTest::testChangeUserStatus
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Trouble updating user status to block!'
++    'success' =&gt; true
++    'message' =&gt; ' user status updated to block'
+ )
+
+/app/home/app/code/connector/Test/Api/UserTest.php:19
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Connector\Test\Components\ConnectorsTest" file="/app/home/app/code/connector/Test/Components/ConnectorsTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.038779">
+      <testcase name="testGetConnectorModelByCode" class="App\Connector\Test\Components\ConnectorsTest" classname="App.Connector.Test.Components.ConnectorsTest" file="/app/home/app/code/connector/Test/Components/ConnectorsTest.php" line="12" assertions="1" time="0.038779"/>
+    </testsuite>
+    <testsuite name="App\Connector\Test\Components\HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" tests="15" assertions="12" errors="3" failures="7" skipped="0" time="0.599940">
+      <testcase name="testTemporarlyUninstall" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="13" assertions="0" time="0.039028">
+        <error type="TypeError">App\Connector\Test\Components\HookTest::testTemporarlyUninstall
+TypeError: Argument 1 passed to Phalcon\Collection::get() must be of the type string, null given
+
+/app/home/app/code/connector/Components/ApiClient.php:32
+/app/home/app/code/connector/Components/Hook.php:38
+/app/home/app/code/connector/Test/Components/HookTest.php:31
+</error>
+      </testcase>
+      <testcase name="testAppDelete" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="38" assertions="1" time="0.035237"/>
+      <testcase name="testShopEraser" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="47" assertions="1" time="0.039299">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testShopEraser
+Failed asserting that true matches expected false.
+
+/app/home/app/code/connector/Test/Components/HookTest.php:262
+</failure>
+      </testcase>
+      <testcase name="testDeleteUninstallShop" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="265" assertions="1" time="0.036560">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testDeleteUninstallShop
+Failed asserting that true matches expected false.
+
+/app/home/app/code/connector/Test/Components/HookTest.php:480
+</failure>
+      </testcase>
+      <testcase name="testHandleWebhooksAfterAppUninstall" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="483" assertions="0" time="0.052619">
+        <error type="Error">App\Connector\Test\Components\HookTest::testHandleWebhooksAfterAppUninstall
+Error: Call to a member function get() on null
+
+/app/home/app/code/connector/Components/ApiClient.php:33
+/app/home/app/code/connector/Components/Hook.php:401
+/app/home/app/code/connector/Components/Hook.php:371
+/app/home/app/code/connector/Test/Components/HookTest.php:620
+</error>
+      </testcase>
+      <testcase name="testDisconnectAccount" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="628" assertions="1" time="0.033292">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testDisconnectAccount
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Illegal string offset 'target''
++    'success' =&gt; true
++    'message' =&gt; 'Successfully inserted uninstall keys'
+ )
+
+/app/home/app/code/connector/Test/Components/HookTest.php:650
+</failure>
+      </testcase>
+      <testcase name="testSetUninstallStatusInAppForDisconnectAccount" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="655" assertions="1" time="0.041504"/>
+      <testcase name="testSetStatusInSourcesAndTargets" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="668" assertions="1" time="0.036338"/>
+      <testcase name="testSetUninstallDateInApp" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="814" assertions="1" time="0.044226">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testSetUninstallDateInApp
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Illegal string offset '_id''
++    'success' =&gt; true
++    'message' =&gt; 'Field Added successfully'
+ )
+
+/app/home/app/code/connector/Test/Components/HookTest.php:958
+</failure>
+      </testcase>
+      <testcase name="testSendDataToMarketplace" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="963" assertions="1" time="0.033824"/>
+      <testcase name="testRemoveDisconnectedTargetsAndSources" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="995" assertions="0" time="0.035287">
+        <error type="PHPUnit\Framework\Error\Warning">App\Connector\Test\Components\HookTest::testRemoveDisconnectedTargetsAndSources
+Illegal string offset '_id'
+
+/app/home/app/code/connector/Components/Hook.php:800
+/app/home/app/code/connector/Test/Components/HookTest.php:1046
+</error>
+      </testcase>
+      <testcase name="testDeleteDocumentsOnBasisOfAppCode" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="1054" assertions="1" time="0.034953">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testDeleteDocumentsOnBasisOfAppCode
+Failed asserting that true matches expected false.
+
+/app/home/app/code/connector/Test/Components/HookTest.php:1109
+</failure>
+      </testcase>
+      <testcase name="testPrepareDataToSendMarketplacesForShopEraser" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="1113" assertions="1" time="0.035463">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testPrepareDataToSendMarketplacesForShopEraser
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Illegal string offset 'sources''
++    'success' =&gt; true
++    'shop' =&gt; Array (...)
+ )
+
+/app/home/app/code/connector/Test/Components/HookTest.php:1206
+</failure>
+      </testcase>
+      <testcase name="testDeleteDocumentsOnBasisOfAppTagSourceIdTargetId" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="1210" assertions="1" time="0.068078"/>
+      <testcase name="testDeleteAppIfNoSourcesTargetsConnnected" class="App\Connector\Test\Components\HookTest" classname="App.Connector.Test.Components.HookTest" file="/app/home/app/code/connector/Test/Components/HookTest.php" line="1224" assertions="1" time="0.034232">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Connector\Test\Components\HookTest::testDeleteAppIfNoSourcesTargetsConnnected
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; false
+-    'message' =&gt; 'Invalid argument supplied for foreach()'
++    'success' =&gt; true
++    'message' =&gt; 'Shop contains no active apps, sources and targets.'
+ )
+
+/app/home/app/code/connector/Test/Components/HookTest.php:1233
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Connector\Test\UnitTest" file="/app/home/app/code/connector/Test/UnitTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.033916">
+      <testcase name="testTestCase" class="App\Connector\Test\UnitTest" classname="App.Connector.Test.UnitTest" file="/app/home/app/code/connector/Test/UnitTest.php" line="12" assertions="2" time="0.033916"/>
+    </testsuite>
+    <testsuite name="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" tests="5" assertions="0" errors="5" failures="0" skipped="0" time="0.183773">
+      <testcase name="testgetCatalog" class="ApiTest" classname="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" line="5" assertions="0" time="0.032848">
+        <error type="Exception">ApiTest::testgetCatalog
+Exception: Class App\Onyx\Controllers\IndexController does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/ApiTest.php:7
+</error>
+      </testcase>
+      <testcase name="testcreateContact" class="ApiTest" classname="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" line="17" assertions="0" time="0.034061">
+        <error type="Exception">ApiTest::testcreateContact
+Exception: Class App\Onyx\Controllers\IndexController does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/ApiTest.php:24
+</error>
+      </testcase>
+      <testcase name="testgetproducts" class="ApiTest" classname="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" line="28" assertions="0" time="0.039191">
+        <error type="Exception">ApiTest::testgetproducts
+Exception: Class App\Onyx\Controllers\IndexController does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/ApiTest.php:30
+</error>
+      </testcase>
+      <testcase name="testcreateProduct" class="ApiTest" classname="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" line="35" assertions="0" time="0.036510">
+        <error type="Exception">ApiTest::testcreateProduct
+Exception: Class App\Onyx\Controllers\IndexController does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/ApiTest.php:40
+</error>
+      </testcase>
+      <testcase name="testupdateProductAttribute" class="ApiTest" classname="ApiTest" file="/app/home/app/code/onyx/Test/ApiTest.php" line="44" assertions="0" time="0.041163">
+        <error type="Exception">ApiTest::testupdateProductAttribute
+Exception: Class App\Onyx\Controllers\IndexController does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/ApiTest.php:49
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Onyx\Test\Product\Import\HelperTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php" tests="4" assertions="2" errors="2" failures="0" skipped="0" time="0.162894">
+      <testcase name="testGetOnyxProducts" class="App\Onyx\Test\Product\Import\HelperTest" classname="App.Onyx.Test.Product.Import.HelperTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php" line="25" assertions="1" time="0.053210"/>
+      <testcase name="testProductFormat" class="App\Onyx\Test\Product\Import\HelperTest" classname="App.Onyx.Test.Product.Import.HelperTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php" line="43" assertions="1" time="0.032534"/>
+      <testcase name="testcheckTempProduct" class="App\Onyx\Test\Product\Import\HelperTest" classname="App.Onyx.Test.Product.Import.HelperTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php" line="65" assertions="0" time="0.036014">
+        <error type="Error">App\Onyx\Test\Product\Import\HelperTest::testcheckTempProduct
+Error: Call to undefined method Generation\Wrapper\Onyx\Components\Product\Import\Helper::checkTempProduct()
+
+/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php:68
+</error>
+      </testcase>
+      <testcase name="testcheckParentExist" class="App\Onyx\Test\Product\Import\HelperTest" classname="App.Onyx.Test.Product.Import.HelperTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php" line="73" assertions="0" time="0.041136">
+        <error type="Error">App\Onyx\Test\Product\Import\HelperTest::testcheckParentExist
+Error: Call to undefined method Generation\Wrapper\Onyx\Components\Product\Import\Helper::checkParentExist()
+
+/app/home/app/code/onyx/Test/Components/Product/Import/HelperTest.php:80
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Onyx\Test\Components\Product\Import\ImportTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/ImportTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.212937">
+      <testcase name="testGetMarketplaceProducts" class="App\Onyx\Test\Components\Product\Import\ImportTest" classname="App.Onyx.Test.Components.Product.Import.ImportTest" file="/app/home/app/code/onyx/Test/Components/Product/Import/ImportTest.php" line="26" assertions="1" time="0.212937"/>
+    </testsuite>
+    <testsuite name="OnyxImportTest" file="/app/home/app/code/onyx/Test/OnyxImportTest.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.037294">
+      <testcase name="testgetMarketplaceProducts" class="OnyxImportTest" classname="OnyxImportTest" file="/app/home/app/code/onyx/Test/OnyxImportTest.php" line="5" assertions="0" time="0.037294">
+        <error type="Exception">OnyxImportTest::testgetMarketplaceProducts
+Exception: Class App\Mymodule\Components\Product\Import\Import does not exist
+
+/app/home/app/code/core/Components/ObjectManager.php:80
+/app/home/app/code/onyx/Test/OnyxImportTest.php:10
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="UnitTest" file="/app/home/app/code/onyx/Test/UnitTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.034320">
+      <testcase name="testCheck" class="UnitTest" classname="UnitTest" file="/app/home/app/code/onyx/Test/UnitTest.php" line="5" assertions="1" time="0.034320"/>
+    </testsuite>
+    <testsuite name="App\Apiconnect\Test\Models\Apps\SubUserTest" file="/app/home/app/code/apiconnect/Test/Api/SubUserTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.040149">
+      <testcase name="testChangeSubUserStatus" class="App\Apiconnect\Test\Models\Apps\SubUserTest" classname="App.Apiconnect.Test.Models.Apps.SubUserTest" file="/app/home/app/code/apiconnect/Test/Api/SubUserTest.php" line="13" assertions="1" time="0.040149">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Apiconnect\Test\Models\Apps\SubUserTest::testChangeSubUserStatus
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    'success' =&gt; true
+-    'message' =&gt; 'User is active!'
++    'success' =&gt; false
++    'message' =&gt; 'Trouble in changing user status to active!'
+ )
+
+/app/home/app/code/apiconnect/Test/Api/SubUserTest.php:63
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Apiconnect\Test\Models\Apps\ShopTest" file="/app/home/app/code/apiconnect/Test/Models/Apps/ShopTest.php" tests="2" assertions="2" errors="0" failures="2" skipped="0" time="0.069833">
+      <testcase name="testAddShop" class="App\Apiconnect\Test\Models\Apps\ShopTest" classname="App.Apiconnect.Test.Models.Apps.ShopTest" file="/app/home/app/code/apiconnect/Test/Models/Apps/ShopTest.php" line="13" assertions="1" time="0.035532">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Apiconnect\Test\Models\Apps\ShopTest::testAddShop
+Failed asserting that false is true.
+
+/app/home/app/code/apiconnect/Test/Models/Apps/ShopTest.php:25
+</failure>
+      </testcase>
+      <testcase name="testChangeAppShopStatus" class="App\Apiconnect\Test\Models\Apps\ShopTest" classname="App.Apiconnect.Test.Models.Apps.ShopTest" file="/app/home/app/code/apiconnect/Test/Models/Apps/ShopTest.php" line="52" assertions="1" time="0.034301">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Apiconnect\Test\Models\Apps\ShopTest::testChangeAppShopStatus
+Failed asserting that 0 matches expected 1.
+
+/app/home/app/code/apiconnect/Test/Models/Apps/ShopTest.php:63
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Testhome\Test\UnitTest" file="/app/home/app/code/testhome/Test/UnitTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.049948">
+      <testcase name="testCreateUser" class="App\Testhome\Test\UnitTest" classname="App.Testhome.Test.UnitTest" file="/app/home/app/code/testhome/Test/UnitTest.php" line="7" assertions="1" time="0.049948"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\ConfigTest" file="/app/home/app/code/meta/Test/Components/Events/ConfigTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.038486">
+      <testcase name="testafterSaveConfig" class="App\Meta\Test\Components\Events\ConfigTest" classname="App.Meta.Test.Components.Events.ConfigTest" file="/app/home/app/code/meta/Test/Components/Events/ConfigTest.php" line="21" assertions="1" time="0.038486"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\Product\ProductUpdateTest" file="/app/home/app/code/meta/Test/Components/Events/Product/ProductUpdateTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.080933">
+      <testcase name="testAfterProductImport" class="App\Meta\Test\Components\Events\Product\ProductUpdateTest" classname="App.Meta.Test.Components.Events.Product.ProductUpdateTest" file="/app/home/app/code/meta/Test/Components/Events/Product/ProductUpdateTest.php" line="21" assertions="1" time="0.047600"/>
+      <testcase name="testAfterProductUpdate" class="App\Meta\Test\Components\Events\Product\ProductUpdateTest" classname="App.Meta.Test.Components.Events.Product.ProductUpdateTest" file="/app/home/app/code/meta/Test/Components/Events/Product/ProductUpdateTest.php" line="37" assertions="1" time="0.033333"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\Product\SingleSyncTest" file="/app/home/app/code/meta/Test/Components/Events/Product/SingleSyncTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.096013">
+      <testcase name="testbeforesourceProductSync" class="App\Meta\Test\Components\Events\Product\SingleSyncTest" classname="App.Meta.Test.Components.Events.Product.SingleSyncTest" file="/app/home/app/code/meta/Test/Components/Events/Product/SingleSyncTest.php" line="21" assertions="1" time="0.040557"/>
+      <testcase name="testaftersourceProductSync" class="App\Meta\Test\Components\Events\Product\SingleSyncTest" classname="App.Meta.Test.Components.Events.Product.SingleSyncTest" file="/app/home/app/code/meta/Test/Components/Events/Product/SingleSyncTest.php" line="36" assertions="1" time="0.055456"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\Product\SyncBuyabilityTest" file="/app/home/app/code/meta/Test/Components/Events/Product/SyncBuyabilityTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.037806">
+      <testcase name="testafterBuyabilityStatusUpdate" class="App\Meta\Test\Components\Events\Product\SyncBuyabilityTest" classname="App.Meta.Test.Components.Events.Product.SyncBuyabilityTest" file="/app/home/app/code/meta/Test/Components/Events/Product/SyncBuyabilityTest.php" line="21" assertions="1" time="0.037806"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\Product\VariantDeleteTest" file="/app/home/app/code/meta/Test/Components/Events/Product/VariantDeleteTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.035785">
+      <testcase name="testafterVariantsDelete" class="App\Meta\Test\Components\Events\Product\VariantDeleteTest" classname="App.Meta.Test.Components.Events.Product.VariantDeleteTest" file="/app/home/app/code/meta/Test/Components/Events/Product/VariantDeleteTest.php" line="21" assertions="1" time="0.035785"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Events\ProductTest" file="/app/home/app/code/meta/Test/Components/Events/ProductTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.038270">
+      <testcase name="testgetTargetInformationForProduct" class="App\Meta\Test\Components\Events\ProductTest" classname="App.Meta.Test.Components.Events.ProductTest" file="/app/home/app/code/meta/Test/Components/Events/ProductTest.php" line="14" assertions="1" time="0.038270"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" tests="5" assertions="11" errors="1" failures="3" skipped="0" time="0.198055">
+      <testcase name="testFormatData" class="App\Meta\Test\Components\HelperTest" classname="App.Meta.Test.Components.HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" line="15" assertions="2" time="0.038851">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\HelperTest::testFormatData
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'source' =&gt; Array (...)
+     'target' =&gt; Array (...)
+-    'user_id' =&gt; '62b1c196934c88d728081199'
++    'user_id' =&gt; '62b1c240bbb70bf1ee03eea9'
+ )
+
+/app/home/app/code/meta/Test/Components/HelperTest.php:51
+</failure>
+      </testcase>
+      <testcase name="testcallRemote" class="App\Meta\Test\Components\HelperTest" classname="App.Meta.Test.Components.HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" line="59" assertions="0" time="0.034416">
+        <error type="Error">App\Meta\Test\Components\HelperTest::testcallRemote
+Error: Call to a member function get() on null
+
+/app/home/app/code/connector/Components/ApiClient.php:33
+/app/home/app/code/meta/Components/Helper.php:140
+/app/home/app/code/meta/Test/Components/HelperTest.php:62
+</error>
+      </testcase>
+      <testcase name="testAddAndUpdateNotification" class="App\Meta\Test\Components\HelperTest" classname="App.Meta.Test.Components.HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" line="73" assertions="1" time="0.043327">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\HelperTest::testAddAndUpdateNotification
+Failed asserting that Array &amp;0 (
+    'success' =&gt; false
+) is false.
+
+/app/home/app/code/meta/Test/Components/HelperTest.php:80
+</failure>
+      </testcase>
+      <testcase name="testCreateWorker" class="App\Meta\Test\Components\HelperTest" classname="App.Meta.Test.Components.HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" line="88" assertions="7" time="0.044774">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\HelperTest::testCreateWorker
+Failed asserting that false is true.
+
+/app/home/app/code/meta/Test/Components/HelperTest.php:115
+</failure>
+      </testcase>
+      <testcase name="testgetAppTag" class="App\Meta\Test\Components\HelperTest" classname="App.Meta.Test.Components.HelperTest" file="/app/home/app/code/meta/Test/Components/HelperTest.php" line="125" assertions="1" time="0.036687"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Marketing\DisconnectEventTest" file="/app/home/app/code/meta/Test/Components/Marketing/DisconnectEventTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="0.086818">
+      <testcase name="testBeforeDisconnectCampaigns" class="App\Meta\Test\Components\Marketing\DisconnectEventTest" classname="App.Meta.Test.Components.Marketing.DisconnectEventTest" file="/app/home/app/code/meta/Test/Components/Marketing/DisconnectEventTest.php" line="9" assertions="0" time="0.039027">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\DisconnectEventTest::testBeforeDisconnectCampaigns
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testDisconnectCampaigns" class="App\Meta\Test\Components\Marketing\DisconnectEventTest" classname="App.Meta.Test.Components.Marketing.DisconnectEventTest" file="/app/home/app/code/meta/Test/Components/Marketing/DisconnectEventTest.php" line="16" assertions="0" time="0.047791">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\DisconnectEventTest::testDisconnectCampaigns
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Marketing\HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" tests="18" assertions="0" errors="18" failures="0" skipped="0" time="0.741819">
+      <testcase name="testGetAccountStatus" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="10" assertions="0" time="0.043533">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetAccountStatus
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testPublishCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="16" assertions="0" time="0.041238">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testPublishCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetCampaigns" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="101" assertions="0" time="0.037312">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetCampaigns
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="119" assertions="0" time="0.038909">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetAudience" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="133" assertions="0" time="0.042290">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetAudience
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testUpdateCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="145" assertions="0" time="0.037569">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testUpdateCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testInitCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="242" assertions="0" time="0.043623">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testInitCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testCheckIsFirstCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="251" assertions="0" time="0.055203">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testCheckIsFirstCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testPauseCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="259" assertions="0" time="0.042570">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testPauseCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testActiveCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="274" assertions="0" time="0.048841">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testActiveCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetMetaUser" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="290" assertions="0" time="0.042945">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetMetaUser
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetMetaShop" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="299" assertions="0" time="0.034489">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testGetMetaShop
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testRegisterMerchant" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="306" assertions="0" time="0.034902">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testRegisterMerchant
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testUnregisterMerchant" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="317" assertions="0" time="0.046129">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testUnregisterMerchant
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testCampaignBegin" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="329" assertions="0" time="0.039848">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testCampaignBegin
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testKeywordAutocomplete" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="339" assertions="0" time="0.040650">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testKeywordAutocomplete
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testmakeRemoteCall" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="350" assertions="0" time="0.036369">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testmakeRemoteCall
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testArchiveCampaign" class="App\Meta\Test\Components\Marketing\HelperTest" classname="App.Meta.Test.Components.Marketing.HelperTest" file="/app/home/app/code/meta/Test/Components/Marketing/HelperTest.php" line="364" assertions="0" time="0.035400">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Marketing\HelperTest::testArchiveCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\BatchUploadTest" file="/app/home/app/code/meta/Test/Components/Product/BatchUploadTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.115781">
+      <testcase name="testRemoteCallForBatchUpload" class="App\Meta\Test\Components\Product\BatchUploadTest" classname="App.Meta.Test.Components.Product.BatchUploadTest" file="/app/home/app/code/meta/Test/Components/Product/BatchUploadTest.php" line="18" assertions="2" time="0.040992"/>
+      <testcase name="testupdateUploadedProductDataForBatchCall" class="App\Meta\Test\Components\Product\BatchUploadTest" classname="App.Meta.Test.Components.Product.BatchUploadTest" file="/app/home/app/code/meta/Test/Components/Product/BatchUploadTest.php" line="35" assertions="1" time="0.037796"/>
+      <testcase name="testupdateErrorProductDataForBatchCall" class="App\Meta\Test\Components\Product\BatchUploadTest" classname="App.Meta.Test.Components.Product.BatchUploadTest" file="/app/home/app/code/meta/Test/Components/Product/BatchUploadTest.php" line="54" assertions="1" time="0.036993"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\CsvUploadTest" file="/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.110968">
+      <testcase name="testhandleCallForCsvUpload" class="App\Meta\Test\Components\Product\CsvUploadTest" classname="App.Meta.Test.Components.Product.CsvUploadTest" file="/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php" line="19" assertions="0" time="0.043607">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\CsvUploadTest::testhandleCallForCsvUpload
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php:21
+</error>
+      </testcase>
+      <testcase name="testupdateErrorDataInCsvUpload" class="App\Meta\Test\Components\Product\CsvUploadTest" classname="App.Meta.Test.Components.Product.CsvUploadTest" file="/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php" line="38" assertions="0" time="0.032748">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\CsvUploadTest::testupdateErrorDataInCsvUpload
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php:40
+</error>
+      </testcase>
+      <testcase name="testupdateSuccessDataInCsvUpload" class="App\Meta\Test\Components\Product\CsvUploadTest" classname="App.Meta.Test.Components.Product.CsvUploadTest" file="/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php" line="59" assertions="0" time="0.034613">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\CsvUploadTest::testupdateSuccessDataInCsvUpload
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/CsvUploadTest.php:61
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\DeleteTest" file="/app/home/app/code/meta/Test/Components/Product/DeleteTest.php" tests="3" assertions="11" errors="0" failures="2" skipped="0" time="0.187975">
+      <testcase name="testDelete" class="App\Meta\Test\Components\Product\DeleteTest" classname="App.Meta.Test.Components.Product.DeleteTest" file="/app/home/app/code/meta/Test/Components/Product/DeleteTest.php" line="23" assertions="9" time="0.052714">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\Product\DeleteTest::testDelete
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'SUCCESS'
++'TERMINATE'
+
+/app/home/app/code/meta/Test/Components/Product/DeleteTest.php:66
+</failure>
+      </testcase>
+      <testcase name="testDeleteProducts" class="App\Meta\Test\Components\Product\DeleteTest" classname="App.Meta.Test.Components.Product.DeleteTest" file="/app/home/app/code/meta/Test/Components/Product/DeleteTest.php" line="75" assertions="1" time="0.042643">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\Product\DeleteTest::testDeleteProducts
+Failed asserting that null is true.
+
+/app/home/app/code/meta/Test/Components/Product/DeleteTest.php:84
+</failure>
+      </testcase>
+      <testcase name="testdeleteProductData" class="App\Meta\Test\Components\Product\DeleteTest" classname="App.Meta.Test.Components.Product.DeleteTest" file="/app/home/app/code/meta/Test/Components/Product/DeleteTest.php" line="93" assertions="1" time="0.092618"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" tests="5" assertions="3" errors="2" failures="0" skipped="0" time="0.219143">
+      <testcase name="testinit" class="App\Meta\Test\Components\Product\HandleSyncTest" classname="App.Meta.Test.Components.Product.HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" line="20" assertions="1" time="0.053948"/>
+      <testcase name="testCheckHandleStatus" class="App\Meta\Test\Components\Product\HandleSyncTest" classname="App.Meta.Test.Components.Product.HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" line="32" assertions="1" time="0.035756"/>
+      <testcase name="testcheckAndUpdateProductStatus" class="App\Meta\Test\Components\Product\HandleSyncTest" classname="App.Meta.Test.Components.Product.HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" line="51" assertions="1" time="0.044959"/>
+      <testcase name="testprocessBatchHandleRequest" class="App\Meta\Test\Components\Product\HandleSyncTest" classname="App.Meta.Test.Components.Product.HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" line="62" assertions="0" time="0.047684">
+        <error type="Error">App\Meta\Test\Components\Product\HandleSyncTest::testprocessBatchHandleRequest
+Error: Call to a member function get() on null
+
+/app/home/app/code/connector/Components/ApiClient.php:33
+/app/home/app/code/meta/Components/Helper.php:140
+/app/home/app/code/meta/Components/Product/HandleSync.php:153
+/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php:75
+</error>
+      </testcase>
+      <testcase name="testprocessCsvHandleRequest" class="App\Meta\Test\Components\Product\HandleSyncTest" classname="App.Meta.Test.Components.Product.HandleSyncTest" file="/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php" line="83" assertions="0" time="0.036796">
+        <error type="Error">App\Meta\Test\Components\Product\HandleSyncTest::testprocessCsvHandleRequest
+Error: Call to a member function get() on null
+
+/app/home/app/code/connector/Components/ApiClient.php:33
+/app/home/app/code/meta/Components/Helper.php:140
+/app/home/app/code/meta/Components/Product/HandleSync.php:277
+/app/home/app/code/meta/Test/Components/Product/HandleSyncTest.php:96
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" tests="6" assertions="6" errors="1" failures="0" skipped="0" time="0.285783">
+      <testcase name="testsaveFeed" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="19" assertions="1" time="0.052837"/>
+      <testcase name="testaddTargetDataForRemoteRequest" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="39" assertions="1" time="0.061051"/>
+      <testcase name="testaddDefaultValueAndValidateProductData" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="52" assertions="0" time="0.048355">
+        <error type="TypeError">App\Meta\Test\Components\Product\HelperTest::testaddDefaultValueAndValidateProductData
+TypeError: Argument 1 passed to Phalcon\Collection::get() must be of the type string, null given
+
+/app/home/app/code/connector/Models/Product/Edit.php:114
+/app/home/app/code/meta/Components/Product/Helper.php:208
+/app/home/app/code/meta/Components/Product/Helper.php:97
+/app/home/app/code/meta/Test/Components/Product/HelperTest.php:60
+</error>
+      </testcase>
+      <testcase name="testmergeParentAndChildData" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="68" assertions="1" time="0.042556"/>
+      <testcase name="testGetProductBySourceProductIds" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="80" assertions="1" time="0.043015"/>
+      <testcase name="testgetTotalProductCountofShop" class="App\Meta\Test\Components\Product\HelperTest" classname="App.Meta.Test.Components.Product.HelperTest" file="/app/home/app/code/meta/Test/Components/Product/HelperTest.php" line="92" assertions="2" time="0.037969"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\HookTest" file="/app/home/app/code/meta/Test/Components/Product/HookTest.php" tests="4" assertions="10" errors="1" failures="0" skipped="0" time="0.147723">
+      <testcase name="testhasRequiredField" class="App\Meta\Test\Components\Product\HookTest" classname="App.Meta.Test.Components.Product.HookTest" file="/app/home/app/code/meta/Test/Components/Product/HookTest.php" line="20" assertions="5" time="0.038843"/>
+      <testcase name="testCreateQueueToCreateProduct" class="App\Meta\Test\Components\Product\HookTest" classname="App.Meta.Test.Components.Product.HookTest" file="/app/home/app/code/meta/Test/Components/Product/HookTest.php" line="51" assertions="2" time="0.036196"/>
+      <testcase name="testCreateQueueToDeleteProduct" class="App\Meta\Test\Components\Product\HookTest" classname="App.Meta.Test.Components.Product.HookTest" file="/app/home/app/code/meta/Test/Components/Product/HookTest.php" line="69" assertions="1" time="0.038345">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\HookTest::testCreateQueueToDeleteProduct
+Invalid argument supplied for foreach()
+
+/app/home/app/code/meta/Components/Product/Hook.php:333
+/app/home/app/code/meta/Components/Product/Hook.php:233
+/app/home/app/code/meta/Test/Components/Product/HookTest.php:78
+</error>
+      </testcase>
+      <testcase name="testCreateQueueToUpdateProduct" class="App\Meta\Test\Components\Product\HookTest" classname="App.Meta.Test.Components.Product.HookTest" file="/app/home/app/code/meta/Test/Components/Product/HookTest.php" line="88" assertions="2" time="0.034339"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\NotificationTest" file="/app/home/app/code/meta/Test/Components/Product/NotificationTest.php" tests="4" assertions="1" errors="3" failures="0" skipped="0" time="0.166991">
+      <testcase name="testaddNotificationWithProductCount" class="App\Meta\Test\Components\Product\NotificationTest" classname="App.Meta.Test.Components.Product.NotificationTest" file="/app/home/app/code/meta/Test/Components/Product/NotificationTest.php" line="18" assertions="0" time="0.036582">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\NotificationTest::testaddNotificationWithProductCount
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/NotificationTest.php:20
+</error>
+      </testcase>
+      <testcase name="testproductCountForNotification" class="App\Meta\Test\Components\Product\NotificationTest" classname="App.Meta.Test.Components.Product.NotificationTest" file="/app/home/app/code/meta/Test/Components/Product/NotificationTest.php" line="37" assertions="1" time="0.041256"/>
+      <testcase name="testupdateErrorNotificationForProduct" class="App\Meta\Test\Components\Product\NotificationTest" classname="App.Meta.Test.Components.Product.NotificationTest" file="/app/home/app/code/meta/Test/Components/Product/NotificationTest.php" line="52" assertions="0" time="0.054567">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\NotificationTest::testupdateErrorNotificationForProduct
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/NotificationTest.php:54
+</error>
+      </testcase>
+      <testcase name="testformatAndSendNotification" class="App\Meta\Test\Components\Product\NotificationTest" classname="App.Meta.Test.Components.Product.NotificationTest" file="/app/home/app/code/meta/Test/Components/Product/NotificationTest.php" line="65" assertions="0" time="0.034586">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\NotificationTest::testformatAndSendNotification
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/NotificationTest.php:67
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" tests="13" assertions="13" errors="5" failures="0" skipped="0" time="0.519400">
+      <testcase name="testfireTrackUserEvent" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="21" assertions="1" time="0.030569"/>
+      <testcase name="testgetTargetProductIdFromMarketPlace" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="33" assertions="1" time="0.034615"/>
+      <testcase name="testPrepareProductData" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="46" assertions="1" time="0.042698"/>
+      <testcase name="testInit" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="72" assertions="2" time="0.045049"/>
+      <testcase name="testSetResponse" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="90" assertions="2" time="0.029794"/>
+      <testcase name="testaddProgressNotification" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="105" assertions="0" time="0.037667">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\ProductTest::testaddProgressNotification
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/ProductTest.php:107
+</error>
+      </testcase>
+      <testcase name="testpartialProductUpload" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="118" assertions="0" time="0.034743">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\ProductTest::testpartialProductUpload
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/ProductTest.php:120
+</error>
+      </testcase>
+      <testcase name="testinitiateDeleteProduct" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="137" assertions="1" time="0.042446"/>
+      <testcase name="testgetUser" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="155" assertions="0" time="0.032252">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\ProductTest::testgetUser
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/ProductTest.php:157
+</error>
+      </testcase>
+      <testcase name="testcheckImportProgress" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="169" assertions="1" time="0.042734"/>
+      <testcase name="testinitiateUpload" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="185" assertions="4" time="0.039728"/>
+      <testcase name="testisBrandUpdated" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="213" assertions="0" time="0.041157">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\ProductTest::testisBrandUpdated
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/ProductTest.php:215
+</error>
+      </testcase>
+      <testcase name="testgetBrandName" class="App\Meta\Test\Components\Product\ProductTest" classname="App.Meta.Test.Components.Product.ProductTest" file="/app/home/app/code/meta/Test/Components/Product/ProductTest.php" line="228" assertions="0" time="0.065948">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Product\ProductTest::testgetBrandName
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/ProductUnitTestApp.php:152
+/app/home/app/code/meta/Test/Components/Product/ProductTest.php:230
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\QueuedTaskTest" file="/app/home/app/code/meta/Test/Components/Product/QueuedTaskTest.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.151149">
+      <testcase name="testabortQueuedTaskForUploadProcess" class="App\Meta\Test\Components\Product\QueuedTaskTest" classname="App.Meta.Test.Components.Product.QueuedTaskTest" file="/app/home/app/code/meta/Test/Components/Product/QueuedTaskTest.php" line="18" assertions="1" time="0.033464"/>
+      <testcase name="testupdateUploadStepsInQueuedTaskEntry" class="App\Meta\Test\Components\Product\QueuedTaskTest" classname="App.Meta.Test.Components.Product.QueuedTaskTest" file="/app/home/app/code/meta/Test/Components/Product/QueuedTaskTest.php" line="29" assertions="1" time="0.033670"/>
+      <testcase name="testgetQueuedTask" class="App\Meta\Test\Components\Product\QueuedTaskTest" classname="App.Meta.Test.Components.Product.QueuedTaskTest" file="/app/home/app/code/meta/Test/Components/Product/QueuedTaskTest.php" line="40" assertions="1" time="0.046127"/>
+      <testcase name="testaddProcessEntryInQueuedTask" class="App\Meta\Test\Components\Product\QueuedTaskTest" classname="App.Meta.Test.Components.Product.QueuedTaskTest" file="/app/home/app/code/meta/Test/Components/Product/QueuedTaskTest.php" line="57" assertions="1" time="0.037888"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\TestUserTest" file="/app/home/app/code/meta/Test/Components/Product/TestUserTest.php" tests="3" assertions="5" errors="0" failures="1" skipped="0" time="0.138705">
+      <testcase name="testisTestUser" class="App\Meta\Test\Components\Product\TestUserTest" classname="App.Meta.Test.Components.Product.TestUserTest" file="/app/home/app/code/meta/Test/Components/Product/TestUserTest.php" line="19" assertions="1" time="0.067540"/>
+      <testcase name="testgetTestUser" class="App\Meta\Test\Components\Product\TestUserTest" classname="App.Meta.Test.Components.Product.TestUserTest" file="/app/home/app/code/meta/Test/Components/Product/TestUserTest.php" line="30" assertions="2" time="0.033714">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\Product\TestUserTest::testgetTestUser
+Failed asserting that null is not null.
+
+/app/home/app/code/meta/Test/Components/Product/TestUserTest.php:36
+</failure>
+      </testcase>
+      <testcase name="testprepareProductDataForABTester" class="App\Meta\Test\Components\Product\TestUserTest" classname="App.Meta.Test.Components.Product.TestUserTest" file="/app/home/app/code/meta/Test/Components/Product/TestUserTest.php" line="43" assertions="2" time="0.037451"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\UploadTest" file="/app/home/app/code/meta/Test/Components/Product/UploadTest.php" tests="3" assertions="6" errors="0" failures="1" skipped="0" time="0.118183">
+      <testcase name="testUpload" class="App\Meta\Test\Components\Product\UploadTest" classname="App.Meta.Test.Components.Product.UploadTest" file="/app/home/app/code/meta/Test/Components/Product/UploadTest.php" line="23" assertions="3" time="0.045159">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Meta\Test\Components\Product\UploadTest::testUpload
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'SUCCESS'
++''
+
+/app/home/app/code/meta/Test/Components/Product/UploadTest.php:49
+</failure>
+      </testcase>
+      <testcase name="testsaveUploadedProductData" class="App\Meta\Test\Components\Product\UploadTest" classname="App.Meta.Test.Components.Product.UploadTest" file="/app/home/app/code/meta/Test/Components/Product/UploadTest.php" line="56" assertions="1" time="0.033617"/>
+      <testcase name="testuploadUpdatedProductData" class="App\Meta\Test\Components\Product\UploadTest" classname="App.Meta.Test.Components.Product.UploadTest" file="/app/home/app/code/meta/Test/Components/Product/UploadTest.php" line="67" assertions="2" time="0.039407"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Product\ValidationTest" file="/app/home/app/code/meta/Test/Components/Product/ValidationTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.067343">
+      <testcase name="testvalidateAndPrepareProductData" class="App\Meta\Test\Components\Product\ValidationTest" classname="App.Meta.Test.Components.Product.ValidationTest" file="/app/home/app/code/meta/Test/Components/Product/ValidationTest.php" line="19" assertions="1" time="0.035505"/>
+      <testcase name="testgetMappedAttributes" class="App\Meta\Test\Components\Product\ValidationTest" classname="App.Meta.Test.Components.Product.ValidationTest" file="/app/home/app/code/meta/Test/Components/Product/ValidationTest.php" line="32" assertions="1" time="0.031838"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Components\Models\CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" tests="5" assertions="0" errors="5" failures="0" skipped="0" time="0.193556">
+      <testcase name="testSaveCampaign" class="App\Meta\Test\Components\Models\CampaignContainerTest" classname="App.Meta.Test.Components.Models.CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" line="8" assertions="0" time="0.035741">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Models\CampaignContainerTest::testSaveCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetCampaignByCampaignID" class="App\Meta\Test\Components\Models\CampaignContainerTest" classname="App.Meta.Test.Components.Models.CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" line="27" assertions="0" time="0.037924">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Models\CampaignContainerTest::testGetCampaignByCampaignID
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testGetCampaigns" class="App\Meta\Test\Components\Models\CampaignContainerTest" classname="App.Meta.Test.Components.Models.CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" line="35" assertions="0" time="0.034307">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Models\CampaignContainerTest::testGetCampaigns
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testUpdateCampaign" class="App\Meta\Test\Components\Models\CampaignContainerTest" classname="App.Meta.Test.Components.Models.CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" line="49" assertions="0" time="0.040804">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Models\CampaignContainerTest::testUpdateCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+      <testcase name="testDeleteCampaign" class="App\Meta\Test\Components\Models\CampaignContainerTest" classname="App.Meta.Test.Components.Models.CampaignContainerTest" file="/app/home/app/code/meta/Test/Models/CampaignContainerTest.php" line="65" assertions="0" time="0.044780">
+        <error type="PHPUnit\Framework\Error\Warning">App\Meta\Test\Components\Models\CampaignContainerTest::testDeleteCampaign
+Creating default object from empty value
+
+/app/home/app/code/meta/Test/MarketingUnitTestApp.php:28
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Models\ProductTest" file="/app/home/app/code/meta/Test/Models/ProductTest.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.159917">
+      <testcase name="testGetRefineProductsCount" class="App\Meta\Test\Models\ProductTest" classname="App.Meta.Test.Models.ProductTest" file="/app/home/app/code/meta/Test/Models/ProductTest.php" line="18" assertions="1" time="0.030423"/>
+      <testcase name="testRemoveTargetEntryFromRefineContainer" class="App\Meta\Test\Models\ProductTest" classname="App.Meta.Test.Models.ProductTest" file="/app/home/app/code/meta/Test/Models/ProductTest.php" line="30" assertions="1" time="0.061084"/>
+      <testcase name="testRemoveTargetEntryFromProductContainer" class="App\Meta\Test\Models\ProductTest" classname="App.Meta.Test.Models.ProductTest" file="/app/home/app/code/meta/Test/Models/ProductTest.php" line="42" assertions="1" time="0.030918"/>
+      <testcase name="testDeleteParentDataFromRefine" class="App\Meta\Test\Models\ProductTest" classname="App.Meta.Test.Models.ProductTest" file="/app/home/app/code/meta/Test/Models/ProductTest.php" line="54" assertions="1" time="0.037492"/>
+    </testsuite>
+    <testsuite name="App\Meta\Test\Models\TemporaryStorageTest" file="/app/home/app/code/meta/Test/Models/TemporaryStorageTest.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.162594">
+      <testcase name="testAddUpdatedProductData" class="App\Meta\Test\Models\TemporaryStorageTest" classname="App.Meta.Test.Models.TemporaryStorageTest" file="/app/home/app/code/meta/Test/Models/TemporaryStorageTest.php" line="18" assertions="1" time="0.040809"/>
+      <testcase name="testGetUpdatedProductData" class="App\Meta\Test\Models\TemporaryStorageTest" classname="App.Meta.Test.Models.TemporaryStorageTest" file="/app/home/app/code/meta/Test/Models/TemporaryStorageTest.php" line="30" assertions="1" time="0.052993"/>
+      <testcase name="testDeleteUpdateProductData" class="App\Meta\Test\Models\TemporaryStorageTest" classname="App.Meta.Test.Models.TemporaryStorageTest" file="/app/home/app/code/meta/Test/Models/TemporaryStorageTest.php" line="42" assertions="1" time="0.033521"/>
+      <testcase name="testUpdateUpdatedProductDataStatus" class="App\Meta\Test\Models\TemporaryStorageTest" classname="App.Meta.Test.Models.TemporaryStorageTest" file="/app/home/app/code/meta/Test/Models/TemporaryStorageTest.php" line="54" assertions="1" time="0.035271"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
